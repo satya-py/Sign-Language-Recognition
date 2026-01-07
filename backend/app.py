@@ -16,10 +16,10 @@ app = Flask(__name__)
 CORS(app)
 
 # Configuration - Use absolute paths
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MODEL_PATH = os.path.join(BASE_DIR, 'sign_language_model_best.h5')
-ENCODER_PATH = os.path.join(BASE_DIR, 'label_encoder.pkl')
-VIDEO_DATA_DIR = os.path.join(BASE_DIR, 'videos_demo')
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_PATH = 'sign_language_model_best.h5'
+ENCODER_PATH ='label_encoder.pkl'
+VIDEO_DATA_DIR = 'videos_demo'
 
 # Initialize Model
 detector = None
