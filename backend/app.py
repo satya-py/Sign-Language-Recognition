@@ -16,7 +16,6 @@ app = Flask(__name__)
 CORS(app)
 
 # Configuration - Use absolute paths
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL_PATH = 'sign_language_model_best.h5'
 ENCODER_PATH ='label_encoder.pkl'
 VIDEO_DATA_DIR = 'videos_demo'
@@ -31,7 +30,6 @@ def initialize_model():
     print("\n" + "=" * 70)
     print("🚀 INITIALIZING SIGN LANGUAGE DETECTION SERVER")
     print("=" * 70)
-    print(f"Base Directory: {BASE_DIR}")
     print(f"Model Path: {MODEL_PATH}")
     print(f"Encoder Path: {ENCODER_PATH}")
     print(f"Model exists: {os.path.exists(MODEL_PATH)}")
