@@ -1,0 +1,101 @@
+# Python
+*.py[cod]
+*$py.class
+*.so
+__pycache__/
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environment
+isl_env/
+venv/
+env/
+ENV/
+.venv
+.github/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Temporary Files
+*.tmp
+temp/
+tmp/
+*.cache
+
+# Flask
+instance/
+.webassets-cache
+*.pyc
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Operating System
+Thumbs.db
+Desktop.ini
+
+# Uploads
+uploads/
+temp_uploads/
+
+# Testing
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+
+# Documentation
+docs/_build/
+
+# Node modules (if using frontend with npm)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Media files (optional - comment out if you want to track these)
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.gif
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip

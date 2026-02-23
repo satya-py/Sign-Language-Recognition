@@ -256,7 +256,7 @@ def test_model():
     """Test the model loader"""
     MODEL_PATH = r'C:\Users\satya\OneDrive\Desktop\projects\sign language\sign_language_model_best.h5'
     ENCODER_PATH = r'C:\Users\satya\OneDrive\Desktop\projects\sign language\label_encoder.pkl'
-    VIDEO_PATH = r'C:\Users\satya\OneDrive\Desktop\projects\sign language\videos_demo\Cough.mp4'
+    VIDEO_PATH = r'C:\Users\satya\OneDrive\Desktop\projects\sign language\videos_demo\Stomach aches.mp4'
     
     try:
         print("Testing model loader...")

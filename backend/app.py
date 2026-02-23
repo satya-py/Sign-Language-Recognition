@@ -16,9 +16,9 @@ app = Flask(__name__)
 CORS(app)
 
 # Configuration - Use absolute paths
-MODEL_PATH = 'sign_language_model_best.h5'
-ENCODER_PATH ='label_encoder.pkl'
-VIDEO_DATA_DIR = 'videos_demo'
+MODEL_PATH = r'C:\Users\satya\OneDrive\Desktop\projects\sign language\sign_language_model_best.h5'
+ENCODER_PATH = r'C:\Users\satya\OneDrive\Desktop\projects\sign language\label_encoder.pkl'
+VIDEO_DATA_DIR = r'C:\Users\satya\OneDrive\Desktop\projects\sign language\videos_demo'
 
 # Initialize Model
 detector = None
@@ -93,7 +93,7 @@ def predict_video():
     print("📹 VIDEO UPLOAD PREDICTION REQUEST")
     print("=" * 70)
     
-    if not detector:
+    if not detector.model:
         print("❌ Model not initialized")
         return jsonify({"error": "Model not initialized"}), 500
     
